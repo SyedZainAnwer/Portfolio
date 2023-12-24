@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Intro from "@/components/Intro";
-import SectionDivider from "@/components/section-divider";
+import Projects from "@/components/Projects";
+import SectionDivider from "@/components/shared/Section-Divider";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+      <Projects />
     </main>
   )
 }
