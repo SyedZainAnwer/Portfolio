@@ -8,9 +8,11 @@ import { LuHardDriveDownload } from "react-icons/lu";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import useSectionInView from "@/hooks/useSectionInView";
+import { useGlobalContext } from "@/context/App-Context";
 
 const Intro = () => {
 
+    const { setActiveSection, setTimeOfLastClick } = useGlobalContext();
     const { ref } = useSectionInView('Home', 0.5);
 
     return(
@@ -72,10 +74,10 @@ const Intro = () => {
                 <Link
                     href="#contact"
                     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                // onClick={() => {
-                //     setActiveSection("Contact");
-                //     setTimeOfLastClick(Date.now());
-                // }}
+                onClick={() => {
+                    setActiveSection("Contact");
+                    setTimeOfLastClick(Date.now());
+                }}
                 >
                     Contact me here{" "}
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
