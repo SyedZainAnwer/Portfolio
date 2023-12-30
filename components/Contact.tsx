@@ -74,6 +74,7 @@ const Contact = () => {
                     required
                     maxLength={500}
                     onChange={handleChange}
+                    value={formData.senderEmail}
                     className="h-14 rounded-lg borderBlack px-4"
                 />
                 <textarea 
@@ -82,6 +83,7 @@ const Contact = () => {
                     name="message"
                     required
                     onChange={handleChange}
+                    value={formData.message}
                     maxLength={500}
                 />
                 <Button />
