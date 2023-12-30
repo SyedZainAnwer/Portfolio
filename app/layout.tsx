@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import {GlobalContextProvider} from '@/context/App-Context'
 import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/Footer'
+import ThemeSwitch from '@/components/shared/ThemeSwitch'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster position='top-right'/>
+        <ThemeSwitch />
       </GlobalContextProvider>
       </body>
     </html>

@@ -1,5 +1,5 @@
 import { useGlobalContext } from "@/context/App-Context";
-import type { SectionName } from "@/lib/types";
+import type { SectionName } from "@/lib/types/appTypes";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 

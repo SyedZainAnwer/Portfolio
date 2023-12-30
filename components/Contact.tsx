@@ -58,13 +58,13 @@ const Contact = () => {
             viewport={{ once: true }}
         >
             <SectionHeading heading="Contact me"/>
-            <p className="text-gray-700 -mt-6">Please contact me directly at {" "} 
+            <p className="text-gray-700 -mt-6 dark:text-white/80">Please contact me directly at {" "} 
                 <a className="underline" href="mailto:zainanwer24@gmail.com">zainanwer24@gmail.com</a>{" "}
                 or through this form
             </p>
 
             <form 
-                className="mt-10 flex flex-col"
+                className="mt-10 flex flex-col dark:text-black"
                 action={handleSubmit}
             >
                 <input 
@@ -75,10 +75,10 @@ const Contact = () => {
                     maxLength={500}
                     onChange={handleChange}
                     value={formData.senderEmail}
-                    className="h-14 rounded-lg borderBlack px-4"
+                    className="h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                 />
                 <textarea 
-                    className="h-52 my-3 rounded-lg borderBlack p-4" 
+                    className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" 
                     placeholder="Your message"
                     name="message"
                     required

@@ -27,7 +27,7 @@ const Header = () => {
                         >
                             <Link
                                 href={link.hash} 
-                                className={`${activeSection === link.name && "text-gray-950"} flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition`}
+                                className={`${activeSection === link.name && "text-gray-950 dark:text-gray-200"} flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300`}
                                 onClick={() => {
                                     setActiveSection(link.name)
                                     setTimeOfLastClick(Date.now())
@@ -36,7 +36,7 @@ const Header = () => {
                                 {link.name}
                                 {activeSection === link.name && (
                                     <motion.span 
-                                        className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                                        className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",
