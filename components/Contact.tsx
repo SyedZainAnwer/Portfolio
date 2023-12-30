@@ -2,14 +2,50 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { FaPaperPlane } from "react-icons/fa";
 import SectionHeading from "./shared/Section-Heading";
 import useSectionInView from "@/hooks/useSectionInView";
-import { sendEmail } from "@/actions/sendEmail";
+import { sendEmail } from "@/lib/actions/sendEmail";
+import Button from "./shared/Button";
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 const Contact = () => {
 
-    const { ref } = useSectionInView("Contact")
+    const { ref } = useSectionInView("Contact");
+
+    const [ formData, setFormData ] = useState({
+        senderEmail: '',
+        message: ''
+    });
+
+    const handleSubmit = async(e: any) => {
+
+        const formDataObject = new FormData();
+        formDataObject.append('senderEmail', formData.senderEmail);
+        formDataObject.append('message', formData.message);
+
+        const { data, error } = await sendEmail(formDataObject);
+
+        if (error) {
+            toast.error(error);
+            return;
+        }
+    
+        toast.success('Email sent successfully!');
+    
+        setFormData({
+            senderEmail: '',
+            message: '',
+        });
+    };
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value
+        }))
+    };
 
     return (
         <motion.section 
@@ -29,7 +65,7 @@ const Contact = () => {
 
             <form 
                 className="mt-10 flex flex-col"
-                action={async(data) => await sendEmail(data)}
+                action={handleSubmit}
             >
                 <input 
                     type="email"
@@ -37,6 +73,7 @@ const Contact = () => {
                     placeholder="Your email"
                     required
                     maxLength={500}
+                    onChange={handleChange}
                     className="h-14 rounded-lg borderBlack px-4"
                 />
                 <textarea 
@@ -44,16 +81,10 @@ const Contact = () => {
                     placeholder="Your message"
                     name="message"
                     required
+                    onChange={handleChange}
                     maxLength={500}
                 />
-                <button 
-                    type="submit" 
-                    className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
-                >
-                    Submit 
-                    <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"/> 
-                    {" "}
-                </button>
+                <Button />
             </form>
         </motion.section>
     )
