@@ -20,7 +20,7 @@ const Projects = () => {
 
             {projectsData.map((project, index) => (
                 <React.Fragment key={index}>
-                <ProjectCard {...project}/>
+                        <ProjectCard {...project}/>
                 </React.Fragment>
             ))}
         </section>

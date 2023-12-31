@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import WhatsAppClone from "@/public/assets/whatsapp.png";
+import GameHub from "@/public/assets/Game-Hub.png";
+import ThreadClone from "@/public/assets/thread_clone.png";
 
 export const links = [
     {
@@ -34,14 +34,6 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-  // {
-  //   title: "Graduated bootcamp",
-  //   location: "Miami, FL",
-  //   description:
-  //     "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-  //   icon: React.createElement(LuGraduationCap),
-  //   date: "2019",
-  // },
   {
     title: "Junior Full Stack Developer",
     location: "Karachi, Pakistan",
@@ -64,23 +56,26 @@ export const projectsData = [
   {
     title: "WhatsApp Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Thread Clone",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Dive into group chats with my WhatsApp clone, crafted using React.js and Firebase. A practice project that helped me understand how basic chat application works.",
+    tags: ["React", "JavaScript", "CSS", "Firebase"],
+    imageUrl: WhatsAppClone,
+    link: "https://whats-app-clone-6c7c2.web.app/"
   },
   {
     title: "GameHub",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Explore tailored gaming recommendations on my site, using the RAWG API. Simply filter by genre, platform, and release date to find your ideal game!",
+    tags: ["React", "Axios", "Chakra UI", "TypeScript", "Framer Motion"],
+    imageUrl: GameHub,
+    link: "https://game-hub-syedzainanwer.vercel.app/"
+  },
+  {
+    title: "Thread Clone",
+    description:
+      "Engage in lively discussions with our Thread Clone platform! 🚀 Create threads, comment, and connect, capturing the essence of the original Threads app.",
+      tags: [ "Next.js 14", "TypeScript", "Tailwind", "MongoDB", "Clerk", "Shadcn", "ZOD", "Uploadthing"],
+    imageUrl: ThreadClone,
+    link: "https://threads-clone-sz.vercel.app/"
   },
 ] as const;
 

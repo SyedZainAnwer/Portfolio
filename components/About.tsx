@@ -19,30 +19,11 @@ const About = () => {
         >
             <SectionHeading heading="About me"/>
             <p className="mb-3">
-                After graduating with a degree in{" "}
-                <span className="font-medium">Accounting</span>, I decided to pursue my
-                passion for programming. I enrolled in a coding bootcamp and learned{" "}
-                <span className="font-medium">full-stack web development</span>.{" "}
-                <span className="italic">My favorite part of programming</span> is the
-                problem-solving aspect. I <span className="underline">love</span> the
-                feeling of finally figuring out a solution to a problem. My core stack
-                is{" "}
-                <span className="font-medium">
-                React, Next.js, Node.js, and MongoDB
-                </span>
-                . I am also familiar with TypeScript and Prisma. I am always looking to
-                learn new technologies. I am currently looking for a{" "}
-                <span className="font-medium">full-time position</span> as a software
-                developer.
+                I'm currently a {" "} <span className="font-medium">Computer Science and Artificial Intelligence</span> student at Technische Hochschule Ingolstadt. My programming journey began in college, and now I'm a <span className="font-medium">Full Stack developer</span> using <span className="font-medium">React.js/Next.js</span> for the front end and <span className="font-medium">Python/Django</span> for the back end. <span className="font-medium">MongoDB</span> is my go-to for databases, and I'm always  <span className="font-medium">eager to learn more</span> in the tech world. Right now, I'm focused on improving my skills in <span className="font-medium">Data Structures and Algorithms</span> for better problem-solving and logic building.
             </p>
 
             <p>
-                <span className="italic">When I'm not coding</span>, I enjoy playing
-                video games, watching movies, and playing with my dog. I also enjoy{" "}
-                <span className="font-medium">learning new things</span>. I am currently
-                learning about{" "}
-                <span className="font-medium">history and philosophy</span>. I'm also
-                learning how to play the guitar.
+                When I'm not coding, you'll find me playing football and cricket with friends or enjoying some video game time. I love staying active through physical games. Explore my portfolio to see how my tech skills!
             </p>
         </motion.section>
     )
