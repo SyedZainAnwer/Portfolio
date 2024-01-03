@@ -4,11 +4,11 @@ const Footer = () => {
             <small className="mb-2 block text-xs">
             &copy; 2023 Syed Zain Anwer. All rights reserved.
             </small>
-            <p className="text-xs">
+            {/* <p className="text-xs">
                 <span className="font-semibold">About this website:</span> built with
                 React & Next.js 14 (App Router & Server Actions), TypeScript, Tailwind CSS,
                 Framer Motion, React Email & Resend, Vercel hosting.
-        </p>
+        </p> */}
         </footer>
     );
 };

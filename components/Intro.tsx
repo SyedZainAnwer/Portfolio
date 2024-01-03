@@ -60,7 +60,7 @@ const Intro = () => {
                 <span className="font-bold">Hello, I'm Syed Zain Anwer.</span> I'm a{" "}
                 <span className="font-bold">full-stack developer</span> with{" "}
                 <span className="font-bold">over 1 years</span> of experience.  I thrive on creating captivating <span>websites and applications</span>, with a primary focus on{" "}
-                <span className="font-bold">React (Next.js) and Python</span>.
+                <span className="font-bold">React(Next.js) and Python(Django)</span>.
             </motion.h1>
 
             <motion.div
@@ -92,8 +92,9 @@ const Intro = () => {
                     <LuHardDriveDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
+                <div className="flex justify-around">
                 <a
-                    className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                    className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 mr-2"
                     href="https://linkedin.com"
                     target="_blank"
                 >
@@ -107,6 +108,7 @@ const Intro = () => {
                 >
                     <FaGithubSquare />
                 </a>
+                </div>
             </motion.div>
         </section>
     )

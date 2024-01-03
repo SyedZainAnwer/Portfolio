@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Junior Full Stack Developer",
+    title: "Junior Web Developer",
     location: "Karachi, Pakistan",
     description:
       "I worked as a front-end developer for 9 months at Codesy Consulting. I also upskilled to the full stack.",
@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "Thread Clone",
     description:
-      "Engage in lively discussions with our Thread Clone platform! 🚀 Create threads, comment, and connect, capturing the essence of the original Threads app.",
+      "Engage in lively discussions with my Thread Clone platform! 🚀 Create threads, comment, and connect, capturing the essence of the original Threads app.",
       tags: [ "Next.js 14", "TypeScript", "Tailwind", "MongoDB", "Clerk", "Shadcn", "ZOD", "Uploadthing"],
     imageUrl: ThreadClone,
     link: "https://threads-clone-sz.vercel.app/"
