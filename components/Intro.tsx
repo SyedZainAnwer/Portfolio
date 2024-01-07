@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import profileImage from '@/public/assets/github_profile.jpeg';
+import profileImage from '@/public/assets/profile_image.jpg';
 import { FaGithubSquare } from "react-icons/fa";
 import { LuHardDriveDownload } from "react-icons/lu";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
