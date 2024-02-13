@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import WhatsAppClone from "@/public/assets/whatsapp.png";
 import GameHub from "@/public/assets/Game-Hub.png";
 import ThreadClone from "@/public/assets/thread_clone.png";
+import ThoughtTangle from "@/public/assets/thought_tangle.png";
 
 export const links = [
     {
@@ -76,6 +77,14 @@ export const projectsData = [
       tags: [ "Next.js 14", "TypeScript", "Tailwind", "MongoDB", "Clerk", "Shadcn", "ZOD", "Uploadthing"],
     imageUrl: ThreadClone,
     link: "https://threads-clone-sz.vercel.app/"
+  },
+  {
+    title: "Thought Tangle",
+    description:
+      "Connect with fellow chat participants to engage in discussions on topics that interest you. Share your thoughts and interact with others who share similar interests",
+      tags: [ "Django", "HTML", "CSS", "REST API", "SQLite"],
+    imageUrl: ThoughtTangle,
+    link: "https://github.com/SyedZainAnwer/Thought-Tangle"
   },
 ] as const;
 
