@@ -1,11 +1,12 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaPython } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 import WhatsAppClone from "@/public/assets/whatsapp.png";
 import GameHub from "@/public/assets/Game-Hub.png";
 import ThreadClone from "@/public/assets/thread_clone.png";
 import ThoughtTangle from "@/public/assets/thought_tangle.png";
+import Feedback from "@/public/assets/Untitled.png"
 
 export const links = [
     {
@@ -36,24 +37,38 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Student Software Developer",
+    location: "Ingolstadt, Germany",
+    description: "Development of research Success AI project (Moodle) to enhance student learning experiences.",
+    icon: React.createElement(FaPython),
+    date: "May 2024 - Present"
+  },
+  {
     title: "Junior Web Developer",
     location: "Karachi, Pakistan",
     description:
-      "I worked as a front-end developer for 9 months at Codesy Consulting. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
+      "Contributed to the development of a social media platform using Next.js, TypeScript, and Tailwind CSS.",
+    icon: React.createElement(SiTypescript),
     date: "Mar 2023 - Nov 2023",
   },
   {
     title: "Web Developer Intern",
     location: "Karachi, Pakistan",
     description:
-      "I started as a web developer intern showcasing and learning different technologies related to front end",
+      "Played a significant role in developing the frontend of an internal company project using ReactJS.",
     icon: React.createElement(FaReact),
     date: "Sept 2022 - Feb 2023",
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Feedback",
+    description: "Developed a personal project enabling THI university students to post anonymous feedback about their university experience, while limiting non-THI users to view-only access.",
+    tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "MongoDB", "JWT"],
+    imageUrl: Feedback,
+    link: "https://feedback-sz.vercel.app/"
+  },
   {
     title: "WhatsApp Clone",
     description:
@@ -98,7 +113,9 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "MongoDB",
+  "Postgresql",
   "Python",
-  "Django",
+  "Flask",
   "Framer Motion",
+  "Docker"
 ] as const;

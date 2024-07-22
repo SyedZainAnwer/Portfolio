@@ -60,7 +60,7 @@ const Intro = () => {
                 <span className="font-bold">Hello, I'm Syed Zain Anwer.</span> I'm a{" "}
                 <span className="font-bold">full-stack developer</span> with{" "}
                 <span className="font-bold">over 1 years</span> of experience.  I thrive on creating captivating <span>websites and applications</span>, with a primary focus on{" "}
-                <span className="font-bold">React(Next.js) and Python(Django)</span>.
+                <span className="font-bold">React(Next.js) and Python</span>.
             </motion.h1>
 
             <motion.div

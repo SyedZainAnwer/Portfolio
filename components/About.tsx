@@ -19,7 +19,7 @@ const About = () => {
         >
             <SectionHeading heading="About me" />
             <p className="mb-3">
-                I'm currently a {" "} <span className="font-medium">Computer Science and Artificial Intelligence</span> student at Technische Hochschule Ingolstadt. My programming journey began in college, and now I'm a <span className="font-medium">Full Stack developer</span> using <span className="font-medium">React.js/Next.js</span> for the front end and <span className="font-medium">Python/Django</span> for the back end. <span className="font-medium">MongoDB</span> is my go-to for databases, and I'm always  <span className="font-medium">eager to learn more</span> in the tech world. Right now, I'm focused on improving my skills in <span className="font-medium">Data Structures and Algorithms</span> for better problem-solving and logic building.
+                I'm currently a {" "} <span className="font-medium">Computer Science and Artificial Intelligence</span> student at Technische Hochschule Ingolstadt. My programming journey began in college, and now I'm a <span className="font-medium">Full Stack developer</span> using <span className="font-medium">React.js/Next.js</span> for the front end and <span className="font-medium">Python</span> for the back end. <span className="font-medium">MongoDB</span> is my go-to for databases, and I'm always  <span className="font-medium">eager to learn more</span> in the tech world. Right now, I'm focused on improving my skills in <span className="font-medium">Data Structures and Algorithms</span> for better problem-solving and logic building.
             </p>
 
             <p>
